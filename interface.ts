@@ -36,4 +36,19 @@ document.write('<br>');
 document.write(newShape.width.toString());
 document.write('<br>');
 document.write(newShape.height.toString());
-document.write('<br>');
+
+
+
+document.write('<hr>');
+/**
+ * interfaces strong rule - readonly 
+ */
+
+ interface StrongRule{
+  readonly definition : string;
+ }
+
+ let rule : StrongRule = {definition: 'Never change me'};
+
+ document.write(rule.definition);
+ document.write('<hr>');

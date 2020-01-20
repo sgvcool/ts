@@ -22,4 +22,7 @@ document.write('<br>');
 document.write(newShape.width.toString());
 document.write('<br>');
 document.write(newShape.height.toString());
-document.write('<br>');
+document.write('<hr>');
+var rule = { definition: 'Never change me' };
+document.write(rule.definition);
+document.write('<hr>');
