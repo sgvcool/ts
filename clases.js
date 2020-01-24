@@ -16,6 +16,7 @@ var User = /** @class */ (function () {
     function User(userName, password) {
         this.userName = userName;
         this.password = password;
+        this.createDate = new Date();
     }
     User.prototype.getUserName = function () {
         return this.userName;
@@ -66,3 +67,6 @@ var user = new User('John', 6677);
 document.write('<hr>');
 document.write(user.getPassword().toString());
 document.write('<hr>');
+document.write(user.createDate.toString());
+document.write('<hr>');
+user.createDate = { 'key': 1 };

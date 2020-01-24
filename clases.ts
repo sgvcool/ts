@@ -3,10 +3,13 @@ document.write('<hr>');
 class User{
     public userName: string;
     private password: number;
+    readonly createDate: object;
 
     constructor(userName:string, password:number){
         this.userName = userName;
         this.password = password;
+        this.createDate = new Date();
+
     }
 
     getUserName(){
@@ -69,4 +72,10 @@ document.write('<hr>');
 document.write(user.getPassword().toString());
 document.write('<hr>');
 
+
+
+document.write(user.createDate.toString());
+
+document.write('<hr>');
+//user.createDate = {'key':1}; read only error
 
