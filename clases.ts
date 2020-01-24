@@ -13,12 +13,12 @@ class User{
         return this.userName;
     }
 
-    setUserNaname(userName:string){
+    setUserName(userName:string){
         this.userName = userName;
     }
 
     sayHelloUser(){
-
+        console.log(`Hello ${this.userName} User Password: ${this.password}`);
     }
 }
 
@@ -26,3 +26,8 @@ let user = new User('John',6677);
 document.write('<hr>');
 user.getUserName();
 document.write(user.getUserName());
+document.write('<hr>');
+user.setUserName('David');
+document.write(user.getUserName());
+document.write('<hr>');
+user.sayHelloUser();
