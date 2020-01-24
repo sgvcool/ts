@@ -9,6 +9,15 @@
 function add(a, b) {
     return a + b;
 }
-var sum = add(4, 6);
-document.write(sum.toString());
+/*let sum = add(4,6);
+document.write(sum.toString());*/
+document.write('<hr>');
+var addition = function (c, d, e) {
+    return c + d + e;
+};
+var sum1 = addition(5, 8);
+var sum2 = addition(5, 8, 3);
+document.write(sum1.toString());
+document.write('<hr>');
+document.write(sum2.toString());
 document.write('<hr>');
