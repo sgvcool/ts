@@ -21,3 +21,8 @@ document.write(sum1.toString());
 document.write('<hr>');
 document.write(sum2.toString());
 document.write('<hr>');
+var resStr = function (f, g) {
+    return f + " and " + g;
+};
+document.write(resStr('dsdsd', 'gggggggg'));
+document.write('<hr>');

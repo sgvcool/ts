@@ -28,3 +28,10 @@ document.write('<hr>');
 
 document.write(sum2.toString());
 document.write('<hr>');
+
+let resStr = (f:string, g:string):string =>{
+    return `${f} and ${g}`;
+};
+
+document.write(resStr('dsdsd', 'gggggggg'));
+document.write('<hr>');
